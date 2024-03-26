@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{vue,ts}"],
-  theme: {
-    extend: {},
-  },
+  safelist:[{
+    pattern: /rounded|text|px|py|mx|my|flex|justify|items/,
+  }],
   plugins: [],
 }
